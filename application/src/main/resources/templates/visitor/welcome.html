@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Welcome</title>
+</head>
+<body>
+<div align="center">
+    <h1><b>Welcome visitor <span th:text="${visitorName}"/> !</b></h1><br/>
+    <h3><span th:if="${visitCount} eq 1">First visit !!!</span></h3>
+    <h3>
+        <span th:if="${visitCount} gt 1">
+        Your visit count : <span th:text="${visitCount}"/>, last visit time : <span th:text="${lastVisitTime}"/>
+        </span>
+    </h3>
+    <h3>It's <span th:text="${currentTime}"/> now.</h3>
+</div>
+</body>
+</html>
