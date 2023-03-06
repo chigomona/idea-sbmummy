@@ -21,7 +21,7 @@
         <!-- Project modules -->
         <dependency>
             <groupId>com.eshop</groupId>
-            <artifactId>serviceapi</artifactId>
+            <artifactId>serviceimpl</artifactId>
             <version>${project.version}</version>
         </dependency>
     </dependencies>
